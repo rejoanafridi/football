@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+     --btn-bg-color:#E02C6D;
+     --text-color:#FFFFFF;
+     --p-color: #6C6C6C;
+
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: rgba(211, 211, 211, 0.412);
+}
+/* Header Style start */
+.container{
+     margin: 0 156px;
+     
+   
+}
+
+header{
+     background: #2D25A0;
+     width: 100%;
+     
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 44px;
+     
+     padding: 42px 0;
+     
+
+}
+.nav-item ul{
+     list-style: none;
+     display: flex;
+     padding: 0;
+     
+
+}
+.nav-item ul li{
+     margin-right:30px ;
+}
+
+.nav-item ul li a{
+     text-decoration: none;
+     color: var(--text-color);
+
+}
+
+
+.btn a{
+     text-decoration: none;
+     color: var(--text-color);
+     background-color: var(--btn-bg-color);
+     padding: 10px;
+     
+    
+
+}
+/* Header  style end */
+
+/* Banner section style  */
+.banner, .highlight-section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     padding: 85px 0;
+     /* justify-content: center; */
+}
+.banner-info h1{
+     color: var(--text-color);
+     font-size: 64px;
+     font-weight: 700;
+     /* line-height: 80px; */
+
+
+}
+.banner-image img{
+     width: 100%;
+
+}
+.banner-image img:hover{
+     width: 100%;
+    /* height: 200px; */
+    transform: rotate(360deg);
+    transition: 3s ease-in-out;
+}
+
+
+/* Header Style end */
+
+/* Main Section style start */
+main{
+    
+     padding: 70px 0;
+     
+}
+.players{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap: 30px ;
+     grid-row-gap: 27px ;
+     
+}
+.player{
+     
+     padding: 15px;
+     background-color: #FFFFFF;
+  
+}
+
+
+.player-image img{
+     width: 100%;
+    
+     
+
+}
+.player-info h3{
+     font-size: 28px;
+     font-weight: 700;
+}
+.player-info p{
+     font-size: 16px;
+     line-height: 26px;
+     color: var(--p-color);
+}
+
+
+/* Main Section style end */
+/* Pagination */
+.pagination{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 70px 0;
+ }
+ .pagination a {
+     color: black;
+     float: left;
+     padding: 8px 16px;
+     text-decoration: none;
+     transition: background-color .3s;
+   }
+   .pagination a:hover{
+     background-color: var(--btn-bg-color);
+     
+
+   }
+   
+   .pagination a.active {
+     background-color: var(--btn-bg-color);
+     color: white;
+   }
+
+/* Highlight section style  start*/
+.highlight-section{
+     margin-top: 16px;
+     margin-bottom: 16px;
+}
+.highlight-title{
+     width: 80%;
+     
+}
+.highlight-title h1{
+     font-size: 48px;
+     text-transform: capitalize;
+}
+.highlight-title p{
+     color: #6C6C6C;
+
+     line-height: 28px;
+     font-size: 16px;
+     text-align: left;
+     margin-bottom: 24px;
+}
+
+.highlight-image img{
+     width: 100%;
+}
+/* Highlight section style  end*/
+
+
+/* Featured section */
+.fe-video{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     padding: 85px 0;
+
+     
+}
+iframe{
+     width: 100%;
+}
+aside{
+     padding-left: 50px;
+}
+.feature-titile h1{
+     font-size: 40px;
+}
+.feature-titile p{
+     color: var(--p-color);
+}
+
+/* Subscription section style start*/
+.subcription-title{
+     text-align: center;
+     font-size: 30px;
+ }
+ .subcription-content{
+     text-align: center;
+     width:0 50%;
+ }
+
+/* Subscription section style end */
+
+/* Footer  style start */
+footer{
+     margin-top: 30px;
+     padding-top: 30px;
+}
+.footer-logo, .social-icon{
+     text-align: center;
+     line-height: 28px;
+     
+}
+.fab{
+     font-size: 28px;
+     color: #969BAB;
+     background:hsla(0, 5%, 74%, 0.623);
+     padding: 8px;
+     border-radius: 100%;
+     margin:20px 10px ;
+}
+footer p{
+     font-weight: 400;
+     font-size: 18px;
+     text-align: center;
+
+}
+
+/* Footer  style end */
+
+/* Responsive css for mobile view*/
+@media only screen and (max-width: 688px){
+   header{
+        
+     width:100%;
+   }
+   .banner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        align-items: left;
+        margin: 0 10px;
+        padding: 45px 0;
+   
+   }
+   .banner-info h1{
+     font-size: 36px;
+     font-weight: 700;
+     
+
+   }
+   .banner-image img{
+        width: 80%;
+   }
+   .btn{
+        width: 168px;
+        height: 54px;
+        margin: 20px 0;
+   }
+   .btn a{
+     /* display: none; */
+     padding: 20px 12px;
+     
+     
+   }
+   nav{
+       display: none;
+   }
+   /* Player css */
+   .players{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+   }
+   .player img{
+        width: 100%;
+   }
+   .player-info{
+        width: 77%;
+   }
+   .highlight-section, .fe-video{
+     grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 10px;
+        
+   }
+   .highlight-title, .fe-video h1{
+        font-size: 30px;
+   }
+   .highlight-title p, .fe-video p{
+     
+     font-size: 14px;
+     text-align: left;
+     padding-bottom: 10px;
+
+
+   }
+   
+
+   .footer-logo img{
+        width: 70%;
+   }
+   .fab{
+        font-size: 20px;
+        margin: 10px 5px;
+   }
+   
+   
+}
+/* @media only screen and (max-width: 1024px){
+   header{
+        
+     width:100%;
+   }
+   .banner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        align-items: left;
+        margin: 0 30px;
+        padding: 45px 0;
+   
+   }
+   .banner-info h1{
+     font-size: 46px;
+     font-weight: 700;
+     
+
+   }
+   .banner-image img{
+        width: 90%;
+   }
+   .btn{
+        width: 168px;
+        height: 54px;
+        margin: 20px 0;
+   }
+   .btn a{
+     /* display: none; */
+     /* padding: 20px 12px;
+     
+     
+   }
+   nav{
+       display: none;
+   }
+   Player css
+   .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+   }
+   .player img{
+        width: 100%;
+   }
+   .player-info{
+        width: 77%;
+   }
+   .highlight-section, .fe-video{
+     grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 10px;
+        
+   }
+   .highlight-title, .fe-video h1{
+        font-size: 30px;
+   }
+   .highlight-title p, .fe-video p{
+     
+     font-size: 14px;
+     text-align: left;
+     padding-bottom: 10px;
+
+
+   }
+   
+
+   .footer-logo img{
+        width: 70%;
+   }
+   .fab{
+        font-size: 20px;
+        margin: 10px 5px;
+   }
+   
+   
+} 
+
+  */
+
