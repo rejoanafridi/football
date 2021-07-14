@@ -1,2 +1,2 @@
-# football responsive frontend website psd to html
+# football responsive design psd to html
 Live site: https://rejoanafridi.github.io/football/
